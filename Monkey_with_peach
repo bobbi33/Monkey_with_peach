@@ -1,0 +1,19 @@
+#include "stdafx.h"
+
+
+int main(){
+//	int n = 0; // number of peach
+	int day = 9; // number of days
+	int x1 = 0;		//peach eaten
+	int x2 = 1;		//peach left
+
+	while(day > 0){
+		x1 = (x2 + 1)*2;
+		x2 = x1;
+		day--;
+		printf("At day %d, peach left %d\n",day, x2);
+	}
+
+
+	return 0;
+}
